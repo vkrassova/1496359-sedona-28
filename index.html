@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
+    </head>
+
   <body>
 
     <header>
@@ -25,12 +26,9 @@
 
 <main class="content">
 
-  <section>
-    <figure>
+  <div>
       <img src="img/welcome.svg" width="457" height="351" alt="Welcome to Sedona">
-
-    </figure>
-  </section>
+  </div>
 
 <h1>Седона - небольшой городок в Аризоне, <br>
   заслуживающий большего!</h1>
@@ -91,40 +89,69 @@
   <h2>Заинтересовались?</h2>
   <p>Укажите предполагаемые даты поездки,<br>
     и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+    <div>
+      <button class="search_btn" type="submit">Поиск гостиницы в Седоне</button>
+    </div>
+     <form action="https://echo.htmlacademy.ru/courses" method="post">
+       <div class="data_in">
+         <label for="text-in">Дата заезда:</label>
+         <input id="text-in" type="text" name="data" placeholder="24 Апреля 2017">
+         <button type="button" aria-label="Открыть календарь"></button>
+       </div>
 
-    <button>Поиск гостиницы в Седоне</button>
-     <!-- Здесь будет форма записи -->
+       <div class="data_out">
+         <label for="text-out">Дата выезда:</label>
+         <input id="text-out" type="text" name="data" placeholder="4 Июля 2017">
+         <button type="button" aria-label="Открыть календарь"></button>
+       </div>
 
-     <button>Найти</button>
+       <div class="adults">
+         <label for="adults_number">Взрослые:</label>
+         <span class="minus">-</span>
+         <input id="adults_number" type="text" name="people" value="2">
+         <span class="plus">+</span>
+       </div>
+
+       <div class="kids">
+         <label for="kids_number">Дети:</label>
+         <span class="minus">-</span>
+         <input id="kids_number" type="text" name="people" value="0">
+         <span class="plus">+</span>
+       </div>
+
+       <div class="lookup_btn">
+         <button type="submit">Найти</button>
+       </div>
+    </form>
+
 <figure>
   <img src="img/map.png" alt="Месторасположение города">
 </figure>
 
-   </section>
-
+</section>
 </main>
 
 <footer>
   <section>
-<h2>Контакты</h2>
+<h2 class="visually-hidden">Контакты</h2>
 <p>
     <a href="#">#VisitSedona </a> <br>
 </p>
 <p>
         Тел: <a href="#">+7 (495) 666-01-66</a>
 </p>
-      </section>
+  </section>
 
 <section>
-   <h2>Социальные сети</h2>
-   <ul>
-  <li> <a href="#">Наша страница в Twitter</a></li>
-   <li> <a href="#">Наша страница в Facebook</a></li>
- <li><a href="#">Наша страница на YouTube</a></li>
+   <h2 class="visually-hidden">Социальные сети</h2>
+   <ul class="social-icons">
+  <li> <a href="#"><span class="visually-hidden">Наша страница в Twitter</span></a></li>
+   <li> <a href="#"><span class="visually-hidden">Наша страница в Facebook</span></a></li>
+ <li><a href="#"><span class="visually-hidden">Наша страница на YouTube</span></a></li>
 </ul>
    </section>
 
-<p>Разработано:
+<p>Website by:
 <a href="https://htmlacademy.ru">HTML Academy</a>
 </p>
 </footer>
