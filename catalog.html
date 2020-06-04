@@ -25,40 +25,65 @@
 <main class="content">
 
 <section>
-<p>Инфраструктура:</p>
-<ul>
+<h1 class="visually hidden">Критерий поиска</h1>
+<form action="https://echo.htmlacademy.ru/courses" method="get">
+<fieldset>
+  <legend>Инфраструктура:</legend>
+<ul class="components">
   <li>
-    <span> Бассейн </span> </li>
+    <label for="filter_pool">Бассейн</label>
+    <input id="filter_pool" name="pool" type="checkbox" checked>
+  </li>
     <li>
-      <span> Парковка </span> </li>
+     <label for="filter_parking">Парковка</label>
+       <input id="filter_parking"  name="parking" type="checkbox">
+    </li>
       <li>
-        <span> WI-FI </span> </li>
-    </ul>
-  <p>Тип жилья:</p>
-  <ul>
+        <label for="filter_internet">WI-FI</label>
+        <input id="filter_internet" name="internet" type="checkbox">
+      </li>
+  </ul>
+</fieldset>
+<fieldset>
+   <legend>Тип жилья:</legend>
+<ul class="house_list">
     <li>
-      <span> Гостиница </span> </li>
+      <label for="filter_hotels">Гостиницы</label>
+      <input id="filter_hotels" name="hotels" type="checkbox" checked>
+    </li>
       <li>
-        <span> Мотель </span> </li>
-        <li>
-          <span> Апартаменты </span> </li>
+        <label for="filter_motels">Мотели</label>
+        <input id="filter_motels" name="motels" type="checkbox" checked>
+      <li>
+        <label for="filter_apartments">Апартаменты</label>
+        <input id="filter_apartments" name="apartments" type="checkbox" checked>
+      </li>
       </ul>
+  </fieldset>
 
-  <p>Стоимость в сутки (Р):</p>
+  <div class="filter_range">Стоимость в сутки (Р):</div>
+  <div>
+       <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+	     <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+ </div>
+ <div class="slider"></div>
+ <div class="range_min"></div>
+ <div class="range_max"></div>
+<button type="submit" class="btn_range">Показать</button>
 
-  <button>Показать</button>
+  </form>
 </section>
 
 <div>
   <p>Найдено:3</p>
   <p>сортировка:</p>
-  <a href="#">По цене</a>
-  <a href="#">По типу</a>
-  <a href="#">По рейтингу</a>
+  <button  class="sort_btn sort_active">По цене</button>
+  <button class="sort_btn">По типу</button>
+  <button class="sort_btn">По рейтингу</button>
 </div>
 
 <article>
-  <img src="img/amara-hotel.jpg" width="135" height="90"alt="Amara Resort & Spa">
+  <img src="img/amara-hotel.jpg" width="135" height="90" alt="Amara Resort & Spa">
 <h2>Amara Resort & Spa</h2>
 <p>Гостиница</p> <p>От 4000 Р.</p>
 <a href="#">Подробнее</a>
