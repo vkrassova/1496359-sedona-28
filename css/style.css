@@ -220,7 +220,7 @@ font-size: 21px;
 line-height: 21px;
 margin-top: 50px;
 color: var(--basic-white);
-padding-top: 10px;
+padding-top: 5px;
 }
 
 .town-detail p {
@@ -247,12 +247,13 @@ font-size: 21px;
 line-height: 21px;
 margin-top: 47px;
 margin-bottom: 25px;
-padding-top: 10px;
+padding-top: 5px;
 }
 
 .area-road-tourists p {
   margin-top: 23px;
   margin-bottom: 54px;
+  padding-bottom: 5px;
  }
 
 .area,
@@ -260,6 +261,8 @@ padding-top: 10px;
 .tourists {
   background-color: var(--basic-smoky);
 }
+
+
 
 /*features drid*/
 
@@ -392,7 +395,7 @@ line-height: 21px;
 .popup-open {
   box-sizing:border-box;
   position: absolute;
-  top: 260px;
+  top: 270px;
   left: 50%;
   width: 568px;
   padding-top: 30px;
@@ -423,7 +426,7 @@ line-height: 21px;
 .popup {
   box-sizing: border-box;
   position: absolute;
-  top: 345px;
+  top: 355px;
    display: flex;
   flex-wrap: wrap;
   width: 568px;
@@ -611,6 +614,7 @@ button.count-btn {
 
 .contacts-list p {
   margin-bottom: 9px;
+  margin: 0;
 }
 
 .contacts {
@@ -640,6 +644,7 @@ margin: 0;
   justify-content: space-between;
   align-items: center;
   width: 150px;
+  padding: 0;
 }
 
 .button-background {
@@ -663,12 +668,6 @@ margin: 0;
  font-size: 14px;
  line-height: 26px;
  color: var(--basic-black);
-}
-
-.htmlacademy {
-  position: relative;
-  left: 30px;
-
 }
 
 .developer:hover path,
@@ -720,7 +719,7 @@ fill: var(--basic-blue);
 
 .infrastructure.inf-right {
   position: relative;
-  left: 65px;
+  left: 70px;
 }
 
 .infrastructure legend {
@@ -919,9 +918,11 @@ text-align: left;
 }
 
 .range-price {
+  position: relative;
  list-style: none;
  padding: 0;
  margin: 0;
+ top: -10px;
 }
 
 .range-price {
@@ -969,7 +970,7 @@ text-align: left;
 
 .filter_range {
   position: relative;
-  right: -140px;
+   right: -140px;
   padding: 0;
   margin: 0;
   margin-right: 118px;
@@ -993,6 +994,7 @@ text-align: left;
 
 .range-side-bar {
   position: relative;
+  top: -5px;
   width: 316px;
   height: 2px;
   margin-top: 20px;
@@ -1070,6 +1072,7 @@ button.toggle:focus {
   color: var(--basic-white);
   position: relative;
   left: 83px;
+  top: -5px;
   }
 
 button.button_range:hover,
@@ -1132,7 +1135,7 @@ font-size: 14px;
 line-height: 21px;
 color: var(--basic-rating);
 background-color: var(--basic-light-gray);
-width: 100px;
+width: 90px;
 height: 20px;
 padding-top: 3px;
 padding-bottom: 3px;
@@ -1142,11 +1145,6 @@ text-align:center;
 align-items: center;
 }
 
-.right_column2 {
-  position: relative;
-  top: 20px;
-
-}
 
 .stars-list {
   list-style: none;
@@ -1167,8 +1165,24 @@ align-items: center;
   margin-left: 5px;
 }
 
-.rating {
+.ratings {
     text-align: center;
+}
+
+.rating {
+  display: block;
+  width: 90px;
+  padding: 0;
+ margin-top: 40px;
+ margin-left: 6px;
+}
+
+p.rating {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 12px;
+  padding-right: 10px;
+  margin-right: 5px;
 }
 
 .result_list p {
