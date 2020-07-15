@@ -665,6 +665,12 @@ margin: 0;
  color: var(--basic-black);
 }
 
+.htmlacademy {
+  position: relative;
+  left: 30px;
+
+}
+
 .developer:hover path,
 .developer:focus path {
 fill: var(--basic-blue);
