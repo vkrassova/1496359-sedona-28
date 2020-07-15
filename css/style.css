@@ -127,19 +127,20 @@ text-align: right;
   padding-left: 372px;
   padding-right: 372px;
   padding-bottom: 81px;
-}
-
-.info-town {
-  display: flex;
-  flex-direction: column;
   }
 
-.info-town h1 {
+  .info-town {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-town h1 {
   display: flex;
   justify-content: center;
   height: 80px;
   margin-top: 42px;
-  }
+  padding-top: 10px;
+     }
 
 .info-town p {
   display: flex;
@@ -173,6 +174,7 @@ font-size: 21px;
 line-height: 21px;
 margin-top: 50px;
 color: var(--basic-white);
+padding-top: 10px;
 }
 
 .town-detail p {
@@ -233,13 +235,16 @@ margin-bottom: 25px;
   display: grid;
   text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 330px;
-  margin-top: 64px;
-
+  height: 100%;
+  margin-top: 55px;
+  margin-bottom: 50px;
 }
 
 .housing-food-souvenir h3 {
-    margin-top: 28px;
+margin-top: 28px;
+font-weight: bold;
+font-size: 21px;
+line-height: 21px;
     }
 
 .souvenir img {
@@ -1127,8 +1132,7 @@ background-color: var(--basic-blue);
   width: 258px;
   margin-left: 29px;
   flex-wrap: wrap;
-  justify-content:
-  }
+    }
 
 .hotel-item1, .hotel-item2, .hotel-item3  {
   padding: 30px 73px;
