@@ -175,10 +175,7 @@ text-align: right;
   text-transform: uppercase;
 }
 
-
-
-  /*
-  .info-town {
+    .info-town {
     display: flex;
     flex-direction: column;
   }
@@ -240,7 +237,6 @@ background-color: var(--basic-blue);
 width: 400px;
 height: 256px;
 }
-
 
 .area h3,
 .road h3,
