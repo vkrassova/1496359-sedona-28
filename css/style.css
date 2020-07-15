@@ -247,12 +247,13 @@ font-size: 21px;
 line-height: 21px;
 margin-top: 47px;
 margin-bottom: 25px;
+padding-top: 10px;
 }
 
 .area-road-tourists p {
   margin-top: 23px;
   margin-bottom: 54px;
-}
+ }
 
 .area,
 .road,
@@ -311,10 +312,12 @@ line-height: 21px;
  justify-content: center;
  align-items: center;
  text-align: center;
- height: 290px;
- }
+ height: 270px;
+  }
 
 .headline-hotels {
+  position: relative;
+  top: 30px;
  padding-top: 58px;
  font: inherit;
  font-style: normal;
@@ -326,6 +329,8 @@ line-height: 21px;
 }
 
 .preface-hotels {
+  position: relative;
+  top: 30px;
  width: 435px;
  margin: 0 auto;
  margin-bottom: 45px;
@@ -336,13 +341,14 @@ line-height: 21px;
  line-height: 21px;
   }
 
+
   .interested {
     position: relative;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 76px;
-    z-index: 1;
+      z-index: 1;
   }
 
   .interested h2 {
@@ -384,8 +390,9 @@ line-height: 21px;
 /*button search hotel*/
 
 .popup-open {
+  box-sizing:border-box;
   position: absolute;
-  top: 205px;
+  top: 260px;
   left: 50%;
   width: 568px;
   padding-top: 30px;
@@ -399,6 +406,7 @@ line-height: 21px;
   transform: translateX(-50%);
   cursor: pointer;
   z-index: 1;
+
 }
 
 .popup-open:hover,
@@ -410,12 +418,13 @@ line-height: 21px;
   background-color: var(--basic-active-brown);
   opacity: 1;
   color: rgba(255, 255, 255, 0.3);
-}
+  }
 
 .popup {
+  box-sizing: border-box;
   position: absolute;
-  top: 291px;
-  display: flex;
+  top: 345px;
+   display: flex;
   flex-wrap: wrap;
   width: 568px;
   padding-left: 55px;
@@ -463,7 +472,7 @@ line-height: 21px;
 .hotels-search input {
   position: relative;
   align-items: center;
-  width: 370px;
+  width: 346px;
   height: 38px;
   padding-left: 12px;
   border: none;
@@ -580,6 +589,7 @@ button.count-btn {
 .popup-items button.calendar:active {
     background-image: url("../img/calendar-blue.png");
 }
+
 
 /*Main footer*/
 
@@ -700,6 +710,11 @@ fill: var(--basic-blue);
   padding: 0;
   margin: 0;
   width: 181px;
+}
+
+.infrastructure.inf-right {
+  position: relative;
+  left: 65px;
 }
 
 .infrastructure legend {
@@ -908,7 +923,7 @@ text-align: left;
  width: 317px;
  height: 36px;
  box-sizing: border-box;
- border: 2px solid var(--basic-white);
+ border: 1px solid var(--basic-white);
  border-radius: 2px;
  padding: 5px 0;
 
@@ -939,9 +954,16 @@ text-align: left;
   padding-right: 4px;
   box-sizing: border-box;
   text-align: right;
+  font-weight: normal;
  }
 
+.filter_range input[value] {
+  font-weight: normal;
+}
+
 .filter_range {
+  position: relative;
+  right: -140px;
   padding: 0;
   margin: 0;
   margin-right: 118px;
@@ -955,6 +977,10 @@ text-align: left;
 .filter_range:nth-of-type(3) h2 {
   padding-bottom: 11px;
   padding-left: 5px;
+}
+
+.label-list span {
+  font-weight: normal;
 }
 
 /*range-bar*/
@@ -1036,9 +1062,9 @@ button.toggle:focus {
   margin-top: 33px;
   background-color: rgba(0, 0, 0, 0);
   color: var(--basic-white);
-  position: absolute;
-  right: 220px;
-}
+  position: relative;
+  left: 83px;
+  }
 
 button.button_range:hover,
 button.button_range:focus {
@@ -1100,14 +1126,20 @@ font-size: 14px;
 line-height: 21px;
 color: var(--basic-rating);
 background-color: var(--basic-light-gray);
-width: 110px;
-height: 27px;
+width: 100px;
+height: 20px;
 padding-top: 3px;
 padding-bottom: 3px;
 padding-left: 15px;
 padding-right: 12px;
 text-align:center;
 align-items: center;
+}
+
+.right_column2 {
+  position: relative;
+  top: 20px;
+
 }
 
 .stars-list {
